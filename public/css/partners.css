@@ -1,0 +1,83 @@
+.partners-wrapper {
+    background-image: url("../media/monad3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.partners-inner-wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.partners-title-wrapper {}
+
+.partners-title {
+    color: #252c35;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.partners-logo-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.partners-logo {
+    max-width: 200px;
+    /* background-color: white; */
+    /* padding: 25px; */
+    /* border-radius: 15px; */
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* justify-content: space-between; */
+    cursor: pointer;
+}
+
+.partner-image {
+    width: 100%;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 1080px){
+    .partners-logo{
+        max-width: 210px;
+    }
+    .partners-logo-wrapper{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 957px){
+    .partners-logo{
+        margin: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 685px){
+    
+    .partners-logo{
+        max-width: 180px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .partners-title {
+        font-size: 35px;
+    }
+    .partner-image{
+        max-width: 150px;
+    }
+}

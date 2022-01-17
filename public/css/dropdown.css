@@ -1,0 +1,130 @@
+.current-language-wrapper {
+    display: flex;
+}
+
+.current-language-img-wrapper {
+    padding-top: 5px;
+    height: 20px;
+    width: 20px
+}
+
+.current-language-img:hover {
+    cursor: pointer;
+}
+
+.current-language-text {
+    padding: 2px 0 0 5px;
+    color: white;
+}
+
+.current-language-text:hover {
+    padding:2px 0 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.current-language-arrow-wrapper {
+    height: 10px;
+    width: 10px;
+}
+
+.current-language-arrow-wrapper:hover {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.current-language-arrow-img-opened, .current-language-arrow-img-closed {
+    height: 10px;
+    width: 10px
+}
+
+.current-language-arrow-img-opened {
+    transform: rotate(180deg);
+    transition: all 0.1s ease;
+}
+
+.current-language-arrow-img-closed {
+    transform: rotate(0deg);
+    transition: all 0.1s ease;
+}
+
+.dropdown-wrapper-opened, .dropdown-wrapper-closed {
+    position: absolute;
+    overflow: hidden;
+}
+
+.dropdown-wrapper-opened {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    /* background-color: burlywood; */
+    transition: all 0.1s ease;
+}
+
+.dropdown-wrapper-closed {
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    /* background-color: pink; */
+    transition: all 0.1s ease;
+}
+
+.dropdown-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-img-wrapper {
+    height: 20px;
+    width: 20px
+}
+
+.dropdown-img {
+    height: 20px;
+    width: 20px
+}
+
+.dropdown-img:hover {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.dropdown-item-text {
+    color: white;
+    padding-left: 5px;
+}
+
+.dropdown-item-text:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px){
+    
+    .dropdown-img-wrapper{
+        margin: 5px 0;
+    }
+
+    .current-language-img-wrapper{
+        margin-right: 5px;
+        padding-top: 2px;
+    }
+
+    .mobile-menu img{
+        position: unset!important;
+        display: unset!important;
+        width: unset!important;
+    }
+
+    .dropdown-wrapper-opened {
+        width: 60%;
+    }
+
+    .dropdown-item-text{
+        padding-left: unset;
+    }
+}

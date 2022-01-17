@@ -1,0 +1,247 @@
+.form-wrapper {
+    background-image: url("../media/login-signup-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.form-inner-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.form {
+    /* background-color: #252c35; */
+    background: linear-gradient(to right, #252c35 50%, rgba(235, 235, 235, 0.418) 50%);
+    /* padding: 40px; */
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+    display: flex;
+}
+
+.inner-form {
+    padding: 40px;
+    width: 100%;
+}
+
+.form-logo-wrapper {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, .25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.tab-group li a:hover {
+    background: #2d3a4b;
+    color: #fff;
+}
+
+.tab-group .active a {
+    background: #86c441;
+    color: #fff;
+}
+
+.tab-content>div:last-child {
+    display: none;
+}
+
+.form-text {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 50px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, .5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+label .req {
+    margin: 2px;
+    color: #86c441;
+}
+
+label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #fff;
+}
+
+input, textarea {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 0;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #86c441;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row>div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.top-row>div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    background: #86c441;
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+    background: #2d3a4b;
+    color: #86c441;
+    cursor: pointer;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    padding-bottom: 20px;
+    text-align: right;
+    color: white;
+}
+
+.back-home {
+    text-align: right;
+    color: white;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1060px) {
+    .form {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .form {
+        max-width: 600px;
+        background: #252c35;
+    }
+    .form-logo-wrapper{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .form {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        max-width: 290px;
+    }
+    .form-text {
+        margin: 0 0 20px;
+    }
+    .top-row>div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .field-wrap, .tab-group, .top-row>div:last-child {
+        margin-bottom: 30px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    .tab-group li a {
+        font-size: 18px;
+    }
+    .forgot {
+        margin-top: unset;
+    }
+}

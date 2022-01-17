@@ -1,0 +1,97 @@
+.contact-us-wrapper {
+    background-image: url("../media/monad2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-us-inner-wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 0 25px;
+}
+
+.contact-us-content-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-us-content{
+    max-width: 500px;
+    width: 100%;
+
+}
+
+.contact-us-content-title{
+    color: #86c441;
+    padding-bottom: 50px;
+
+}
+
+.contact-us-content-text{
+    color: #252c35;
+    padding-bottom: 20px;
+    word-break: break-word;
+
+}
+
+.custom-number, .custom-email{
+    font-size: 25px;
+    color: #252c35;
+    cursor: pointer;
+}
+
+.google-maps-wrapper{
+    background-color: #f6f6f6;
+}
+
+.google-maps{
+    margin-bottom: -10px;
+}
+
+.custom-number:hover, .custom-email:hover{
+    color: #86c441;
+}
+
+@media screen and (max-width: 1050px) {
+    .contact-us-content {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .contact-us-content{
+        padding-bottom: 50px;
+    }
+
+    .contact-us-content-title{
+        padding-bottom: unset;
+    }
+
+    .contact-us-content-wrapper{
+        justify-content: center;
+    }
+    
+    .contact-us-wrapper{
+        padding-bottom: unset;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .contact-us-content {
+        width: 300px;
+    }
+    .contact-us-content-title{
+        font-size: 25px;
+    }
+    .contact-us-content-text, .custom-email, .custom-number{
+        font-size: 20px;
+    }
+}

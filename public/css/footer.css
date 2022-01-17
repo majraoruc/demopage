@@ -1,0 +1,135 @@
+.footer-wrapper{
+    background-color: #252c35;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.footer-inner-wrapper{
+    max-width: 1600px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.footer-logo-wrapper{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.footer-logo{
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.footer-title{
+    font-size: 20px;
+    color: #86c441;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer-text{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.copyright-wrapper{
+    /* max-width: 1600px; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color:#21262e;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-box{
+        width: 180px;
+    }
+
+    .footer-info-wrapper{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer-inner-wrapper{
+        flex-direction: column;
+        
+    }
+
+    .footer-logo-wrapper{
+        padding-bottom: 30px;
+    }
+
+    .footer-info-wrapper{
+        justify-content: space-between;
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-info-wrapper{
+        justify-content: unset;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .footer-info-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .footer-box{
+        width: 50%;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .footer-box{
+        width: 100%;
+    }
+
+    .footer-logo-wrapper{
+        margin: auto;
+    }
+}

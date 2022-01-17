@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+
+<head>
+    <title>MonetizeAd - 21st Century Digital Marketing Agency</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Crafted with care, perfected by performance. Experience the full power of Digital Marketing through modern content advertising strategies pushed beyond their limitations.">
+
+    <meta property="og:title" content="MonetizeAd - 21st Century Digital Marketing Agency">
+    <meta property="og:site_name" content="MonetizeAd">
+    <meta property="og:url" content="">
+    <meta property="og:description"
+        content="Crafted with care, perfected by performance. Experience the full power of Digital Marketing through modern content advertising strategies pushed beyond their limitations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./media/logo-cropped.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/innovation.css">
+    <link rel="stylesheet" href="./css/coin.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/contactUs.css">
+    <link rel="stylesheet" href="./css/mostSuccessful.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/solutions.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/partners.css">
+    <link rel="stylesheet" href="./css/subscribe.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/language.js"></script>
+
+</head>
+
+<body>
+
+    <!--HEADER AND MENU BAR-->
+
+    <div class="header-wrapper">
+        <div class="header-inner-wrapper">
+            <header>
+                <div class="mobile-nav-button" title="mobile-header">
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                </div>
+
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="./about-us/" class="menu-item"
+                                title="Learn more about our goals and aspirations">About</a></li>
+                        <li><a href="" class="menu-item" title="Learn more about our platforms">Platforms</a></li>
+                        <li><a href="#Services" class="menu-item" title="Learn more about our services">Services</a>
+                        </li>
+                        <li><a href="./contact/" class="menu-item"
+                                title="Click here if you'd like to talk to us">Contact</a></li>
+                        <div class="language-dropdown-wrapper" id="language-wrapper-mobile"
+                            onClick="languageDropDownHandlerMobile()">
+                            <div class="current-language-wrapper">
+                                <div class="current-language-img-wrapper">
+                                    <img class="current-language-img" src="./media/en.svg"
+                                        alt="a small flag of Great Britain" title="great-britain-flag" />
+                                </div>
+                                <div class="current-language-text">EN &nbsp;</div>
+                                <div class="current-language-arrow-wrapper">
+                                    <img class="current-language-arrow-img-closed" src="./media/arrow.svg"
+                                        id="dropdown-arrow-mobile"
+                                        alt="a small white arrow that serves as a dropdown button for language settings"
+                                        title="arrow-dropdown-language" />
+                                </div>
+                            </div>
+
+                            <div class="dropdown-wrapper-closed" id="dropdown-wrapper-mobile">
+                                <div class="dropdown-item-wrapper" onClick="switchToEN()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="./media/en.svg"
+                                            alt="a small flag of Great Britain" title="great-britain-flag" />
+                                    </div>
+                                    <div class="dropdown-item-text"> EN</div>
+                                </div>
+                                <div class="dropdown-item-wrapper" onClick="switchToBA()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="./media/ba.svg"
+                                            alt="a small flag of Bosnia and Herzegowina" title="bosnia-flag" />
+                                    </div>
+                                    <div class="dropdown-item-text"> BA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <div class="menu-wrapper">
+                <div class="menu-inner-wrapper">
+                    <div class="logo-wrapper">
+                        <a href="./" title="Click here to go back to the homepage"> <img src="./media/Logo.png"
+                                class="logo" id="logo-big" alt="MonetizeAd logo" title="monetizead-logo"> </a>
+                        <a href="./" title="Click here to go back to the homepage"> <img src="./media/logo-cropped.png"
+                                class="logo" id="logo-small" alt="Infinity Symbol MonetizeAd logo"
+                                title="infinity-monetizead-logo"> </a>
+                    </div>
+                    <div class="menu-items-wrapper">
+                        <div class="menu-items" id="remove1">
+                            <a href="./about-us/" class="menu-item"
+                                title="Learn more about our goals and aspirations">About</a>
+                        </div>
+                        <div class="menu-items" id="remove2">
+                            <a href="" class="menu-item" title="Learn more about our platforms">Platforms</a>
+                        </div>
+                        <div class="menu-items" id="remove3">
+                            <a href="#Services" class="menu-item" title="Learn more about our services">Services</a>
+                        </div>
+                        <div class="menu-items" id="remove4">
+                            <a href="./contact/" class="menu-item"
+                                title="Click here if you'd like to talk to us">Contact</a>
+                        </div>
+                    <div class="language-dropdown-wrapper" id="language-wrapper"
+                    onClick="languageDropDownHandler()">
+                    <div class="current-language-wrapper">
+                        <div class="current-language-img-wrapper">
+                            <img class="current-language-img" src="./media/en.svg"
+                                alt="a small flag of Great Britain" title="great-britain-flag" />
+                        </div>
+                        <div class="current-language-text">EN &nbsp;</div>
+                        <div class="current-language-arrow-wrapper">
+                            <img class="current-language-arrow-img-closed" src="./media/arrow.svg"
+                                id="dropdown-arrow"
+                                alt="a small white arrow that serves as a dropdown button for language settings"
+                                title="arrow-dropdown-language" />
+                        </div>
+                    </div>
+
+                    <div class="dropdown-wrapper-closed" id="dropdown-wrapper">
+                        <div class="dropdown-item-wrapper" onClick="switchToEN()">
+                            <div class="dropdown-img-wrapper">
+                                <img class="dropdown-img" src="./media/en.svg"
+                                    alt="a small flag of Great Britain" title="great-britain-flag" />
+                            </div>
+                            <div class="dropdown-item-text"> EN</div>
+                        </div>
+                        <div class="dropdown-item-wrapper" onClick="switchToBA()">
+                            <div class="dropdown-img-wrapper">
+                                <img class="dropdown-img" src="./media/ba.svg"
+                                    alt="a small flag of Bosnia and Herzegowina" title="bosnia-flag" />
+                            </div>
+                            <div class="dropdown-item-text"> BA</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    
+                     
+                </div>
+            </div>
+
+            <div class="hero-wrapper" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true">
+                <div class="hero-inner-wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="first-section section">
+                                <h1 class="section-title">
+                                    We’re MonetizeAd
+                                    21st century digital marketing agency
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="second-section section">
+                                <h1 class="section-title">
+                                    What we do
+                                </h1>
+                                <div class="section-description-wrapper">
+                                    <p class="section-description">
+                                        -We turn your digital assets into money
+                                    </p>
+                                    <p class="section-description">
+                                        -Provision of Services
+                                    </p>
+                                    <p class="section-description">
+                                        -How does MonetizeAd work?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="third-section section">
+                                <h1 class="section-title">
+                                    Careers/Join Us
+                                </h1>
+                                <div class="section-description-wrapper">
+                                    <p class="section-description">
+                                        -Be part of our team
+                                    </p>
+                                    <p class="section-description">
+                                        -We are hiring
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)" title="Previous slide">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)" title="Next slide">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="innovations-wrapper">
+        <div class="innovations-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <h2 class="innovations-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Innovation is what drives us
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <div class="innovations-text-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <p class="innovations-text">
+                    We’re the no. 1 digital marketing agency in BiH with extensive experience in digital marketing, we
+                    use
+                    our innovative software as well as unique client approach to maximize their profit and monetize
+                    their
+                    assets.</p>
+                <a href="./about-us/" class="innovations-link" title="Learn more about our goals and aspirations">More
+                    about us</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="solutions-wrapper">
+        <div class="solutions-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <h2 class="solutions-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Solutions
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <p class="solutions-subtitle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color: #a5a5a5">WE MAKE CREATIVE SOLUTIONS</span></p>
+            <p class="solutions-thesis" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color:#86c441">-&nbsp;</span>Options and ways of
+                monetization</p>
+            <p class="solutions-thesis" style="padding-bottom: 50px;" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="150" data-aos-once="true"><span style="color:#86c441">-&nbsp;</span>What
+                publishers need</p>
+            <div class="solutions-button" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <div class="solutions-button-text">
+                    <p class="button-text">OUR PERFECT WAY:</p>
+                </div>
+            </div>
+            <div class="solutions-boxes-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="media/box1-img.png" class="solutions-img" title="Planning solution"
+                            alt="planning-solution">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">1.<br></span>Planning</p>
+                    </div>
+                </div>
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="media/box2-img.png" class="solutions-img" title="Development solution"
+                            alt="development-solution">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">2.<br></span>Development</p>
+                    </div>
+                </div>
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="media/box3-img.png" class="solutions-img" title="Launching solution"
+                            alt="launching-solution">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">3.<br></span>Launching</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coin-wrapper">
+        <div class="coin-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <div class="flip">
+                <div class="card" id="coin">
+                    <div class="face front">
+                        <img src="./media/coin-front.png" class="coin-img" title="Image of coin with MonetizeAd logo"
+                            alt="front-face-coin">
+                    </div>
+                    <div class="face back">
+                        <img src="./media/coin-back.png" class="coin-img" title="Image of coin with MonetizeAd logo"
+                            alt="back-face-coin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-wrapper ">
+        <div class="services-inner-wrapper">
+            <h2 class="services-title" id="Services" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Our services
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <p class="services-subtitle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color:#a5a5a5">BEST EVER SERVICES WE OFFER</span></p>
+
+            <div class="features">
+                <div class="row" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150" data-aos-once="true">
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-computer"></i></div>
+                            <h3 class="title">Affiliate marketing</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-hosting"></i></div>
+                            <h3 class="title">Traffic <br>monetization platform</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-keyboard"></i></div>
+                            <h3 class="title">Development<br>& Mobile Apps.</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-graphic-design"></i></div>
+                            <h3 class="title">Performance <br>based marketing</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-brainstorm"></i></div>
+                            <h3 class="title">E-commerce</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-stationery"></i></div>
+                            <h3 class="title">Custom <br>software development</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-ink"></i></div>
+                            <h3 class="title">Copywriting</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-research"></i></div>
+                            <h3 class="title">SEO Services</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="partners-wrapper">
+        <div class="partners-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <div class="partners-title-wrapper">
+                <h2 class="partners-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true">Our Partners
+                    <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                        data-aos-once="true"></div>
+                </h2>
+            </div>
+
+            <div class="swiper-container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./media/partner1.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/partner2.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/partner3.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/partner4.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/partner7.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/partner10.png" class="partner-image" title="Our partner" alt="partner-logo">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="subscribe-wrapper">
+                <div class="subscribe-title-wrapper">
+                    <h2 class="subscribe-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                        data-aos-once="true">Subscribe Newsletter
+                        <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                            data-aos-once="true"></div>
+                    </h2>
+                </div>
+                <div class="subscribe-form-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true">
+                    <form class="subscribe-form">
+                        <input type="email" class="email" placeholder="Email">
+                        <div class="submit-button">
+                            <img src="./media/subscribe-button3.png" class="subscribe-button" id="button-big"
+                                title="Subscribe here" alt="subscribe-button">
+                            <img src="./media/subscribe-button-small.png" class="submit-button" id="button-small"
+                                title="Subscribe here" alt="small-subscribe-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="footer-inner-wrapper">
+            <div class="footer-logo-wrapper">
+                <a href="./" title="Click here to go back to the homepage" rel="noopener"> <img src="./media/Logo.png"
+                        class="footer-logo" alt="MonetizeAd logo" title="monetizead-logo"> </a>
+            </div>
+            <div class="footer-info-wrapper">
+                <div class="footer-box">
+                    <p class="footer-title">Links</p>
+                    <a href="./" class="footer-text" title="Click here to go back to the homepage"
+                        rel="noopener">Home</a>
+                    <a href="./about-us/" class="footer-text" title="Learn more about our goals and aspirations"
+                        rel="noopener">About</a>
+                    <p class="footer-text">FAQ</p>
+                    <a href="./#Services" class="footer-text" title="Learn more about our services"
+                        rel="noopener">Services</a>
+                </div>
+                <div class="footer-box">
+                    <p class="footer-title">Follow us</p>
+                    <a href="https://www.facebook.com/monetizead/" target="_blank" rel="noopener"
+                        title="Click here to visit our Facebook " class="footer-text">Facebook</a>
+                    <a href="https://www.instagram.com/monetizead/?hl=en" target="_blank" rel="noopener"
+                        title="Click here to visit our Instagram" class="footer-text">Instagram</a>
+                </div>
+                <div class="footer-box">
+                    <a href="./contact/" class="footer-title" title="Click here if you'd like to talk to us">Contact
+                        us</a>
+                    <a class="footer-text" title="Click here if you'd like to talk to us"
+                        href="mailto:contact@monetizead.com">Email</a>
+                    <a class="footer-text" title="Click here if you'd like to talk to us"
+                        href="tel:+38762446646">Phone</a>
+                    <a class="footer-text" title="Click here if you'd like to see where we are" target="_blank"
+                        rel="noopener"
+                        href="https://www.google.com/maps/place/43%C2%B051'14.9%22N+18%C2%B025'27.6%22E/@43.854138,18.4237948,19z/data=!3m1!4b1!4m9!1m2!2m1!1sHad%C5%BEiabdinica+bb,+Sarajevo!3m5!1s0x0:0x0!7e2!8m2!3d43.8541374!4d18.4243422">Address</a>
+                </div>
+                <div class="footer-box">
+                    <p class="footer-title">Our Subsidiaries</p>
+                    <a href="https://monadplug.com" class="footer-text" target="_blank" rel="noopener"
+                        title="Click here to access MonadPlug">MonadPlug</a>
+                    <a href="https://limitedcharm.com" class="footer-text" target="_blank" rel="noopener"
+                        title="Click here to access LimitedCharm">LimitedCharm</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <p class="copyright">&copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> MonetizeAd</p>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

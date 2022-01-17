@@ -1,0 +1,99 @@
+.innovations-wrapper {
+    background-image: url("../media/monad3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.innovations-inner-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.innovations-title {
+    color: #252c35;
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.innovations-text-wrapper {
+    padding: 0 100px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.innovations-text {
+    font-size: 35px;
+    font-weight: 700;
+    color: #252c35bb;
+    text-align: center;
+}
+
+/* .innovations-link {
+    cursor: pointer;
+    color: #252c35;
+    align-self: flex-end;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.innovations-link:hover {
+    border-bottom: 3px solid #85c440;
+    transition: all 0.3s ease 0s;
+} */
+
+.innovations-link {
+    padding-top: 25px;
+    cursor: pointer;
+    color: #252c35;
+    align-self: flex-end;
+    width: fit-content;
+    font-size: 20px;
+
+}
+.innovations-link:after, .innovations-link:before {
+    backface-visibility: hidden;
+    border-top: 3px solid #85c440;
+    /* border-bottom: 2px solid #85c440; */
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.innovations-link:hover:after, .innovations-link:hover:before {
+    backface-visibility: hidden;
+    border-color: #85c440;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+.innovations-link:hover:before {
+    /* bottom: auto; */
+    /* top: 0; */
+    width: 100%;
+}
+
+@media screen and (max-width: 714px){
+    .innovations-text-wrapper {
+        padding: 0 50px;
+    }
+    .innovations-title {
+        padding: 0 30px 50px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .innovations-title {
+        font-size: 35px
+    }
+    .innovations-text{
+        font-size: 27px
+    }
+}

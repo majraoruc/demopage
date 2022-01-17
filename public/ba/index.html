@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+
+<head>
+    <title>MonetizeAd - Agencija za digitalni marketing 21. stoljeća</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formuliran s pažnjom, izoštren iskustvom. MonetizeAd vodeća je agencija u svijetu Digitalnog Marketinga koja pomjera granice mogućeg uz pomoć mlade ekspertize i personaliziranog pristupa.">
+    <meta property="og:title" content="MonetizeAd - Agencija za digitalni marketing 21. stoljeća">
+    <meta property="og:site_name" content="MonetizeAd">
+    <meta property="og:url" content="">
+    <meta property="og:description"
+        content="Formuliran s pažnjom, izoštren iskustvom. MonetizeAd vodeća je agencija u svijetu Digitalnog Marketinga koja pomjera granice mogućeg uz pomoć mlade ekspertize i personaliziranog pristupa.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./media/logo-cropped.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../css/innovation.css">
+    <link rel="stylesheet" href="../css/coin.css">
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="../css/mostSuccessful.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/solutions.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/partners.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/dropdown.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/swiper-bundle.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/language.js"></script>
+
+</head>
+
+<body>
+
+    <!--HEADER AND MENU BAR-->
+
+    <div class="header-wrapper">
+        <div class="header-inner-wrapper">
+            <header>
+                <div class="mobile-nav-button" title="mobile-header">
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                </div>
+
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="./o-nama/" class="menu-item" title="Saznajte više o nama i našim ciljevima">O
+                                nama</a></li>
+                        <li><a href="" class="menu-item" title="Saznajte više o našim platformama">Platforme</a></li>
+                        <li><a href="#Services" class="menu-item" title="Saznajte više o našim uslugama">Usluge</a>
+                        </li>
+                        <li><a href="./kontakt/" class="menu-item" title="Za kontakt informacije">Kontakt</a></li>
+                        <div class="language-dropdown-wrapper" id="language-wrapper-mobile"
+                            onClick="languageDropDownHandlerMobile()">
+                            <div class="current-language-wrapper">
+                                <div class="current-language-img-wrapper">
+                                    <img class="current-language-img" src="../media/ba.svg"
+                                        alt="mala zastava Bosne i Hercegovine" title="mala-zastava-bih" />
+                                </div>
+                                <div class="current-language-text">BA &nbsp;</div>
+                                <div class="current-language-arrow-wrapper">
+                                    <img class="current-language-arrow-img-closed" src="../media/arrow.svg"
+                                        id="dropdown-arrow-mobile"
+                                        alt="mala bijela strelica koja služi kao dugme za odabir željenog jezika"
+                                        title="mala-bijela-strelica" />
+                                </div>
+                            </div>
+
+                            <div class="dropdown-wrapper-closed" id="dropdown-wrapper-mobile">
+                                <div class="dropdown-item-wrapper" onClick="switchToEN()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="../media/en.svg"
+                                            alt="mala zastava Velike Britanije" title="mala-zastava-velike-britanije" />
+                                    </div>
+                                    <div class="dropdown-item-text"> EN</div>
+                                </div>
+                                <div class="dropdown-item-wrapper" onClick="switchToBA()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="../media/ba.svg"
+                                            alt="mala zastava Bosne i Hercegovine" title="mala-zastava-bih" />
+                                    </div>
+                                    <div class="dropdown-item-text"> BA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <div class="menu-wrapper">
+                <div class="menu-inner-wrapper">
+                    <div class="logo-wrapper">
+                        <a href="./" title="Nazad na početnu stranicu"> <img src="../media/Logo.png" class="logo"
+                                id="logo-big" alt="MonetizeAd logo" title="monetizead-logo"> </a>
+                        <a href="./" title="Nazad na početnu stranicu"> <img src="../media/logo-cropped.png"
+                                class="logo" id="logo-small" alt="bijela-oznaka-monetize-ad"
+                                title="oznaka za beskonačnost koja označava logo MonetizeAd-a"> </a>
+                    </div>
+                    <div class="menu-items-wrapper">
+                        <div class="menu-items" id="remove1">
+                            <a href="./o-nama/" class="menu-item" title="Saznajte više o nama i našim ciljevima">O
+                                nama</a>
+                        </div>
+                        <div class="menu-items" id="remove2">
+                            <a href="" class="menu-item" title="Saznajte više o našim platformama">Platforme</a>
+                        </div>
+                        <div class="menu-items" id="remove3">
+                            <a href="#Services" class="menu-item" title="Saznajte više o našim uslugama">Usluge</a>
+                        </div>
+                        <div class="menu-items" id="remove4">
+                            <a href="./kontakt/" class="menu-item" title="Za kontakt informacije">Kontakt</a>
+                        </div>
+                        <div class="language-dropdown-wrapper" id="language-wrapper"
+                            onClick="languageDropDownHandler()">
+                            <div class="current-language-wrapper">
+                                <div class="current-language-img-wrapper">
+                                    <img class="current-language-img" src="../media/ba.svg"
+                                        alt="mala zastava Bosne i Hercegovine" title="mala-zastava-bih" />
+                                </div>
+                                <div class="current-language-text">BA &nbsp;</div>
+                                <div class="current-language-arrow-wrapper">
+                                    <img class="current-language-arrow-img-closed" src="../media/arrow.svg"
+                                        id="dropdown-arrow"
+                                        alt="mala bijela strelica koja služi kao dugme za odabir željenog jezika"
+                                        title="mala-bijela-strelica" />
+                                </div>
+                            </div>
+
+                            <div class="dropdown-wrapper-closed" id="dropdown-wrapper">
+                                <div class="dropdown-item-wrapper" onClick="switchToEN()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="../media/en.svg"
+                                            alt="mala zastava Velike Britanije" title="mala-zastava-velike-britanije" />
+                                    </div>
+                                    <div class="dropdown-item-text"> EN</div>
+                                </div>
+                                <div class="dropdown-item-wrapper" onClick="switchToBA()">
+                                    <div class="dropdown-img-wrapper">
+                                        <img class="dropdown-img" src="../media/ba.svg"
+                                            alt="mala zastava Bosne i Hercegovine" title="mala-zastava-bih" />
+                                    </div>
+                                    <div class="dropdown-item-text"> BA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="hero-wrapper" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true">
+                <div class="hero-inner-wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="first-section section">
+                                <h1 class="section-title">
+                                    Mi smo MonetizeAd
+                                    Agencija za digitalni marketing 21. stoljeća
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="second-section section">
+                                <h1 class="section-title">
+                                    Šta mi radimo?
+                                </h1>
+                                <div class="section-description-wrapper">
+                                    <p class="section-description">
+                                        -Pretvaramo vašu digitalnu imovinu u novac
+                                    </p>
+                                    <p class="section-description">
+                                        -Pružanje usluga
+                                    </p>
+                                    <p class="section-description">
+                                        -Kako MonetizeAd radi?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="third-section section">
+                                <h1 class="section-title">
+                                    Karijere/Pridružite nam se
+                                </h1>
+                                <div class="section-description-wrapper">
+                                    <p class="section-description">
+                                        -Budite dio našeg tima
+                                    </p>
+                                    <p class="section-description">
+                                        -Zapošljavamo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)" title="Prethodni slajd">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)" title="Sljedeći slajd">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="innovations-wrapper">
+        <div class="innovations-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <h2 class="innovations-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Inovacije nas pokreću
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <div class="innovations-text-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <p class="innovations-text">
+                    Mi smo najuspješnija marketinška agencija u BiH sa dugogodišnjim iskustvom u digitalnom marketingu,
+                    koja svojim inovacijama i softwerima kao i jedinstvenom pristupu partnerima omogućava maksimizaciju
+                    profita i monetizaciju njihove posjete.</p>
+                <a href="./o-nama/" class="innovations-link" title="Saznajte više o nama i našim ciljevima">Više o
+                    nama</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="solutions-wrapper">
+        <div class="solutions-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <h2 class="solutions-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Rješenja
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <p class="solutions-subtitle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color: #a5a5a5">DONOSIMO KREATIVNA RJEŠENJA</span></p>
+            <p class="solutions-thesis" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color:#86c441">-&nbsp;</span>Mogućnosti i načini monetizacije</p>
+            <p class="solutions-thesis" style="padding-bottom: 50px;" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="150" data-aos-once="true"><span style="color:#86c441">-&nbsp;</span>Ono što izdavačima
+                treba</p>
+            <div class="solutions-button" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <div class="solutions-button-text">
+                    <p class="button-text">NAŠ NAČIN:</p>
+                </div>
+            </div>
+            <div class="solutions-boxes-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="../media/box1-img.png" class="solutions-img" title="Rješenje za planiranje"
+                            alt="planiranje-rješenje">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">1.<br></span>Planiranje</p>
+                    </div>
+                </div>
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="../media/box2-img.png" class="solutions-img" title="Razvojno rješenje"
+                            alt="razvojno-rješenje">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">2.<br></span>Razvoj</p>
+                    </div>
+                </div>
+                <div class="solutions-box">
+                    <div class="solution-box-img-wrapper">
+                        <img src="../media/box3-img.png" class="solutions-img" title="Rješenje za lansiranje"
+                            alt="lansiranje-rješenje">
+                    </div>
+                    <div class="solutions-text-wrapper">
+                        <p class="solutions-box-text"><span style="color:#86c441">3.<br></span>Lansiranje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="coin-wrapper">
+        <div class="coin-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <div class="flip">
+                <div class="card" id="coin">
+                    <div class="face front">
+                        <img src="../media/coin-front.png" class="coin-img" title="Slika novcica sa logo MonetizeAd-a"
+                            alt="prednja-strana-novcica">
+                    </div>
+                    <div class="face back">
+                        <img src="../media/coin-back.png" class="coin-img" title="Slika novcica sa logo MonetizeAd-a"
+                            alt="zadnja-strana-novcica">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-wrapper ">
+        <div class="services-inner-wrapper">
+            <h2 class="services-title" id="Services" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">Naše usluge
+                <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true"></div>
+            </h2>
+            <p class="services-subtitle" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true"><span style="color:#a5a5a5">NAJBOLJE USLUGE KOJE NUDIMO</span></p>
+
+            <div class="features">
+                <div class="row" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150" data-aos-once="true">
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-computer"></i></div>
+                            <h3 class="title">Affiliate marketing</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-hosting"></i></div>
+                            <h3 class="title">Platforma za
+                                <br> monetizaciju saobraćaja</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-keyboard"></i></div>
+                            <h3 class="title">Razvoj softwera<br>& Mobilnih Aplikacija</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-graphic-design"></i></div>
+                            <h3 class="title">Marketing <br>zasnovan <br>na učinku</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-brainstorm"></i></div>
+                            <h3 class="title">E-commerce</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-stationery"></i></div>
+                            <h3 class="title">Razvoj <br>unikatnih software-a</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-ink"></i></div>
+                            <h3 class="title">Copywriting</h3>
+                        </div>
+                    </div>
+                    <div class="service-box-info">
+                        <div class="feature-box">
+                            <div class="icon"><i class="lmn lmn-research"></i></div>
+                            <h3 class="title">SEO Usluge</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="partners-wrapper">
+        <div class="partners-inner-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+            data-aos-once="true">
+            <div class="partners-title-wrapper">
+                <h2 class="partners-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true">Naši partneri
+                    <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                        data-aos-once="true"></div>
+                </h2>
+            </div>
+
+            <div class="swiper-container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                data-aos-once="true">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../media/partner1.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/partner2.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/partner3.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/partner4.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/partner7.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/partner10.png" class="partner-image" title="Naš partner" alt="logo-partnera">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="subscribe-wrapper">
+                <div class="subscribe-title-wrapper">
+                    <h2 class="subscribe-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                        data-aos-once="true">Pretplatite se na naš newsletter
+                        <div class="underline" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                            data-aos-once="true"></div>
+                    </h2>
+                </div>
+                <div class="subscribe-form-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150"
+                    data-aos-once="true">
+                    <form class="subscribe-form">
+                        <input type="email" class="email" placeholder="Email">
+                        <div class="submit-button">
+                            <img src="../media/subscribe-button3.png" class="subscribe-button" id="button-big"
+                                title="Pretplati se" alt="dugme-za-pretplatu">
+                            <img src="../media/subscribe-button-small.png" class="submit-button" id="button-small"
+                                title="Pretplati se" alt="malo-dugme-za-pretplatu">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="footer-inner-wrapper">
+            <div class="footer-logo-wrapper">
+                <a href="./" title="Nazad na početnu stranicu" rel="noopener"> <img src="../media/Logo.png"
+                        class="footer-logo" alt="MonetizeAd logo" title="monetizead-logo"> </a>
+            </div>
+            <div class="footer-info-wrapper">
+                <div class="footer-box">
+                    <p class="footer-title">Linkovi</p>
+                    <a href="./" class="footer-text" title="Nazad na početnu stranicu" rel="noopener">Početna</a>
+                    <a href="./o-nama/" class="footer-text" title="Saznajte više o nama i našim ciljevima"
+                        rel="noopener">O nama</a>
+                    <p class="footer-text">FAQ</p>
+                    <a href="#Services" class="footer-text" title="Saznajte više o našim uslugama"
+                        rel="noopener">Usluge</a>
+                </div>
+                <div class="footer-box">
+                    <p class="footer-title">Pratite nas</p>
+                    <a href="https://www.facebook.com/monetizead/" target="_blank" rel="noopener"
+                        title="Posjetite naš Facebook " class="footer-text">Facebook</a>
+                    <a href="https://www.instagram.com/monetizead/?hl=en" target="_blank" rel="noopener"
+                        title="Posjetite naš Instagram" class="footer-text">Instagram</a>
+                </div>
+                <div class="footer-box">
+                    <a href="./kontakt/" class="footer-title" title="Za kontakt informacije">Kontaktirajte nas</a>
+                    <a class="footer-text" title="Za kontakt informacije" href="mailto:contact@monetizead.com">Email</a>
+                    <a class="footer-text" title="Za kontakt informacije" href="tel:+38762446646">Tel</a>
+                    <a class="footer-text" title="Kliknite ovdje da vidite gdje se nalazimo" target="_blank"
+                        rel="noopener"
+                        href="https://www.google.com/maps/place/43%C2%B051'14.9%22N+18%C2%B025'27.6%22E/@43.854138,18.4237948,19z/data=!3m1!4b1!4m9!1m2!2m1!1sHad%C5%BEiabdinica+bb,+Sarajevo!3m5!1s0x0:0x0!7e2!8m2!3d43.8541374!4d18.4243422">Adresa</a>
+                </div>
+                <div class="footer-box">
+                    <p class="footer-title">Naše podružnice</p>
+                    <a href="https://monadplug.com" class="footer-text" target="_blank" rel="noopener"
+                        title="Kliknite ovdje za pristup MonadPlug-u">MonadPlug</a>
+                    <a href="https://limitedcharm.com" class="footer-text" target="_blank" rel="noopener"
+                        title="Click here to access LimitedCharm">LimitedCharm</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <p class="copyright">&copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> MonetizeAd</p>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <script src="./js/scroll.js"></script> -->
+
+    <script src="../js/main.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/header.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

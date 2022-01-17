@@ -1,0 +1,110 @@
+.coin-wrapper {
+    /* background: linear-gradient(to bottom, #ebeee8, #fff); */
+    /* background-image: url("../media/monad3.png"); */
+    background-image: radial-gradient(circle, #fefefe, #fdfdfd, #fcfcfc, #fbfbfb, #fafafa, #f7f7f7, #f5f5f5, #f2f2f2, #ededed, #e7e7e7, #e2e2e2, #dddddd);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:100px;
+    padding-bottom: 100px;
+    background-position: center center;
+    /* height:100vh */
+}
+
+.coin-inner-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding:0 25px
+}
+
+.coin-img {
+    width: 350px;
+    height: 350px;
+    /* box-shadow: 0 15px 20px -6px #575757;
+    border-radius: 50%; */
+}
+
+
+.flip {
+    margin:auto;
+}
+
+.flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    transition: 1s;
+    outline: unset;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flip .card.flipped{
+    -webkit-transform: rotatey(-540deg);
+    transform: rotatey(-540deg);
+    outline: unset;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    font-family: Georgia;
+    font-size: 3em;
+    text-align: center;
+    /* line-height: 200px; */
+    outline: unset;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    outline: unset;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flip .card .back {
+    -webkit-transform: rotateY(540deg);
+    transform: rotateY(540deg);
+    cursor: pointer;
+    outline: unset;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.animate {
+    animation: animate 2s ease-in-out;
+}
+
+@keyframes animate {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(720deg)
+    }
+}
+
+@media screen and (max-width: 565px){
+    .coin-img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .coin-img{
+        width: 200px;
+        height: 200px;
+    }
+}

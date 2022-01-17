@@ -1,0 +1,40 @@
+.most-successful-wrapper{
+    background-image: url("../media/monad2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.most-successful-inner-wrapper{
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.most-successful-title{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    color: #86c441;
+}
+
+@media screen and (max-width: 815px){
+    .most-successful-title{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .most-successful-title{
+        font-size: 40px;
+    }
+    .most-successful-wrapper{
+        padding: 50px 0;
+    }
+}
